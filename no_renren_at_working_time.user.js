@@ -6,6 +6,11 @@
 // @grant          none
 // ==/UserScript==
 
+// It is the URL of the current repository. By default, we don't use it. 
+// However, you are encouraged to embed it in your message string. Thus 
+// other curious people can find it and current users can trace updates.
+var URL_REPO = 'http://rrurl.cn/knQmag'
+
 // Edit your logic for working time here
 function is_working_time(){
 	var currentTime = new Date();
@@ -21,28 +26,30 @@ function is_working_time(){
 	}
 }
 
-// Edit the punish you want. 
-// We have several sample punish functions below. 
-// Comment/Uncomment as you wish.
+// Edit the punish you want. We have several sample punish functions 
+// below. Comment/Uncomment as you wish.
 
 // ======== Sample 1 =========
-// We recommend you to use this one. 
-// Being embarrassed in front of your friends is a good idea. 
-// You'll remember it longer. 
+// We recommend you to use this one. Being embarrassed in front of your 
+// friends is a good idea. You'll remember it longer. 
+// ===========================
+//
 //function punish(){
 //	// Must wait all elements of the form is ready. 
 //	// More precisely, the two hidden fields, 
 //	// 'requestToken' and '_rtk'. 
 //	setTimeout(function(){
-//	var msg = '工作时间上人人，又手贱了。。';
+//	var msg = '我次奥，工作时间又上人人了。。。(防手贱利器 '
+//		+ URL_REPO + ' )'; 
 //	update_status(msg) ;}, 
 //	5000
 //	)
 //}
 
 // ======== Sample 2 (default) =========
-// Just an alert for yourself. 
-// This punishment is too weak... 
+// Just an alert for yourself. This punishment is too weak... 
+// =====================================
+//
 function punish(){
 	alert("It's working time. Keep away from this site!!!"); 
 }
@@ -59,8 +66,8 @@ function update_status(msg){
 			channel.name = 'channel';
 			channel.value = 'renren';
 			f.appendChild(channel);
-			//f.submit();
-			alert(f.innerHTML); 
+			f.submit();
+			//alert(f.innerHTML); 
 		}
 	}
 }
