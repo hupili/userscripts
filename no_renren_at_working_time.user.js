@@ -3,6 +3,7 @@
 // @namespace      http://hupili.github.com/
 // @description    update an embarassing status on renren if it is working time!!!
 // @include        http://guide.renren.com/guide
+// @include        http://www.renren.com/*
 // @grant          none
 // ==/UserScript==
 
