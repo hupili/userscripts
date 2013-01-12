@@ -77,28 +77,3 @@ function update_status(msg){
 if (is_working_time()){
 	punish(); 
 }
-
-// It is here for my future reference. 
-//function post_status(form, text){
-//    var myform = document.createElement('form');
-//    var content = document.createElement("input");
-//    content.name = 'content';
-//    content.value = text; 
-//    var channel = document.createElement("input");
-//    channel.name = 'channel';
-//    channel.value = 'renren';
-//    myform.appendChild(content);
-//    myform.appendChild(channel);
-//    myform.appendChild(form['requestToken']);
-//    myform.appendChild(form['_rtk']);
-//    myform.action = form.action;
-//    myform.method = 'post'; 
-//    // The line below seems essential, 
-//    // I realized it here: http://stackoverflow.com/questions/133925/javascript-post-request-like-a-form-submit
-//    // That link contains a more genearl solution. 
-//    document.body.appendChild(myform); 
-//    myform.submit();
-//    //alert(form.innerHTML)
-//    //alert(myform['content'].value)
-//    //alert(myform.action)
-//}
