@@ -3,7 +3,49 @@
 // @namespace      http://hupili.github.com/
 // @description    update an embarassing status on renren if it is working time!!!
 // @include        http://guide.renren.com/guide
+// @grant          none
 // ==/UserScript==
+
+// Edit your logic for working time here
+function is_working_time(){
+	var currentTime = new Date();
+	var hour = currentTime.getHours();
+	var minute = currentTime.getMinutes();
+	if ((hour >= 8 && hour < 12)
+			|| (hour >= 14 && hour < 18)
+			|| (hour >= 19 && hour < 21))
+	{
+		return true
+	} else {
+		return false
+	}
+}
+
+// Edit the punish you want. 
+// We have several sample punish functions below. 
+// Comment/Uncomment as you wish.
+
+// ======== Sample 1 =========
+// We recommend you to use this one. 
+// Being embarrassed in front of your friends is a good idea. 
+// You'll remember it longer. 
+//function punish(){
+//	// Must wait all elements of the form is ready. 
+//	// More precisely, the two hidden fields, 
+//	// 'requestToken' and '_rtk'. 
+//	setTimeout(function(){
+//	var msg = '工作时间上人人，又手贱了。。';
+//	update_status(msg) ;}, 
+//	5000
+//	)
+//}
+
+// ======== Sample 2 (default) =========
+// Just an alert for yourself. 
+// This punishment is too weak... 
+function punish(){
+	alert("It's working time. Keep away from this site!!!"); 
+}
 
 function update_status(msg){
 	var patt=new RegExp('http://shell.renren.com/[0-9]*/status');
@@ -13,16 +55,21 @@ function update_status(msg){
 		if (patt.test(f.action)){
 			f.elements["content"].value = msg; 
 			var channel = document.createElement("input");
+			channel.type = 'hidden'; 
 			channel.name = 'channel';
 			channel.value = 'renren';
 			f.appendChild(channel);
-			f.submit();
+			//f.submit();
+			alert(f.innerHTML); 
 		}
 	}
 }
 
-var msg = 'trigger a status update once visiting the guide page';
-update_status(msg) ;
+//alert('you are visiting renren');
+
+if (is_working_time()){
+	punish(); 
+}
 
 // It is here for my future reference. 
 //function post_status(form, text){
