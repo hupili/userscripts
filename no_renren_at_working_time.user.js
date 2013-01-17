@@ -4,6 +4,7 @@
 // @description    update an embarassing status on renren if it is working time!!!
 // @include        http://guide.renren.com/guide
 // @include        http://www.renren.com/*
+// @version        1.0
 // @grant          none
 // ==/UserScript==
 
