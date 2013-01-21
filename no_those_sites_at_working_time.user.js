@@ -15,8 +15,12 @@ var REDIR_URL = 'http://hupili.github.com/pages/stop-time-leecher.html';
 // first and write in more rigorous form, e.g. 
 //     ^http://www\.renren\.com
 var BLOCK_LIST = [
-	"www.weibo.com",
-	"www.renren.com"
+	"weibo.com",
+	"renren.com",
+	"groupon.com", 
+	"groupon.hk",
+	"taobao.com",
+	"facebook.com"
 ];
 
 function is_blocked()
