@@ -25,8 +25,7 @@
 配置：
 
    * 将`is_working_time()`修改为自定义的工作时间。
-   * 在文件顶部添加更多的网站，格式如：`// @include        http://www.renren.com/*`。
-   支持通配符。
+   * 修改`BLOCK_LIST`，配置更多的网站。
    * 将`REDIR_URL`配置为你想重定向到的页面。
 
 Have fun!
