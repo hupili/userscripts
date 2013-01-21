@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name           no_renren_at_working_time
+// @name           no_those_sites_at_working_time
 // @namespace      http://hupili.github.com/
-// @description    update an embarassing status on renren if it is working time!!!
+// @description    redirect blocked sites during working time
 // @include        http://*.renren.com
 // @include        http://*.weibo.com
 // @version        1.0
 // @grant          none
 // ==/UserScript==
 
-var REDIR_URL = 'http://hupili.github.com/pages/stop-time-leecher.html'
+var REDIR_URL = 'http://hupili.github.com/pages/stop-time-leecher.html';
 
 // Edit your logic for working time here
 function is_working_time(){
@@ -26,7 +26,7 @@ function is_working_time(){
 }
 
 function punish(){
-	window.location.href = REDIR_URL
+	window.location.href = REDIR_URL;
 }
 
 if (is_working_time()){
