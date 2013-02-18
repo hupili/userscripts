@@ -30,4 +30,11 @@ Location of GM scripts:
    * Linux: `$HOME/.mozilla/firefox/$PROFILE/gm_scripts`
    * Windows: please tell me. 
 
+Compatibility in other browsers
+-------------------------------
 
+For those browsers, please install the following plugins first:
+
+   * Chrome: TamperMonkey
+   * Safari: NinjaKit
+   * Firefox: GreaseMonkey
