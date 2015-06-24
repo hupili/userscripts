@@ -15,7 +15,7 @@
 
    * 工作时间：`[8, 12)`， `[14, 18)`， `[19, 21)`。
    * 惩罚方式：如果在工作时间访问某些网站，
-   则会重定向到[这个页面](http://hupili.github.com/pages/stop-time-leecher.html)
+   则会重定向到[这个页面](https://github.com/hupili/blog/blob/master/pages/stop-time-leecher.md)
 
 自定义配置的方法：
 
