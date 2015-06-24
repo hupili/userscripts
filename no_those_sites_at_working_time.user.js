@@ -7,7 +7,7 @@
 // @grant          none
 // ==/UserScript==
 
-var REDIR_URL = 'http://hupili.github.com/pages/stop-time-leecher.html';
+var REDIR_URL = 'https://github.com/hupili/blog/blob/master/pages/stop-time-leecher.md';
 
 // This is JS's RegEx. 
 // If you do not mind they matched more sites, the following 
