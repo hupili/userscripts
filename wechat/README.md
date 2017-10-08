@@ -16,12 +16,12 @@ Evernote是我们常用的资料管理工具，微信公众号是一个重要的
 
 例如。替换前：
 
-```
+```html
 <img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/YicUhk5aAGtAugHibn2ia6SeT71U3ALE0FPTVqltHibibkqqACbADcfkmdZgIwsT8CZS8gJDsHMokOZwKiaR39QWmNvg/0?wx_fmt=jpeg"; class="" data-ratio="0.666" data-w="1000" src="https://mmbiz.qpic.cn/mmbiz_jpg/YicUhk5aAGtAugHibn2ia6SeT71U3ALE0FPTVqltHibibkqqACbADcfkmdZgIwsT8CZS8gJDsHMokOZwKiaR39QWmNvg/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1"; style="width: auto !important; height: auto !important; visibility: visible !important;" data-fail="0">
 ```
 
 替换后：
 
-```
+```html
 <img data-s="300,640" data-type="jpeg" data-src="https://mmbiz.qpic.cn/mmbiz_jpg/YicUhk5aAGtAugHibn2ia6SeT71U3ALE0FPTVqltHibibkqqACbADcfkmdZgIwsT8CZS8gJDsHMokOZwKiaR39QWmNvg/0?wx_fmt=jpeg"; class="img_loading" data-ratio="0.666" data-w="1000" src="https://mmbiz.qpic.cn/mmbiz_jpg/YicUhk5aAGtAugHibn2ia6SeT71U3ALE0FPTVqltHibibkqqACbADcfkmdZgIwsT8CZS8gJDsHMokOZwKiaR39QWmNvg/0?wx_fmt=jpeg"; style="width: 670px !important; height: 446.22px !important;">
 ```
