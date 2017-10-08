@@ -1,6 +1,8 @@
 # 将微信公众号中的webp图片替换成常规格式
 
-Evernote是我们常用的资料管理工具，微信公众号是一个重要的信息来源。当Evernote遇到微信公众号的时候，问题来了。微信公众号的图片格式大多是webp的，[例子](https://mp.weixin.qq.com/s/WPioQ_dnOBSDxWRv41ZXjA)，Evernote并不支持展示webp，而[过了两年似乎并没有要添加这个feature的意思](https://discussion.evernote.com/topic/85241-evernote-doesnt-support-webp-image/)。实在忍受不了继续等这个feature了，不如自己动手。
+Evernote是我们常用的资料管理工具，微信公众号是一个重要的信息来源。当Evernote遇到微信公众号的时候，问题来了。微信公众号的图片格式大多是webp的，[例子](https://mp.weixin.qq.com/s/WPioQ_dnOBSDxWRv41ZXjA)，Evernote并不支持展示webp，而[过了两年似乎并没有要添加这个feature的意思](https://discussion.evernote.com/topic/85241-evernote-doesnt-support-webp-image/)。实在忍受不了继续等这个feature了，不如自己动手。
+
+安装方法同普通的TamperMonkey脚本一样。见[首页](https://github.com/hupili/userscripts)
 
 ## 治疗前
 
