@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           qshbbs_url_switch
-// @namespace      http://hupili.github.com/
+// @namespace      https://hupili.net/
 // @description    switch from the internal url to external url of qsh bbs 
 // @include        http://bbs.stuhome.net/*
 // ==/UserScript==

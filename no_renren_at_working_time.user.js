@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           no_renren_at_working_time
-// @namespace      http://hupili.github.com/
+// @namespace      https://hupili.net/
 // @description    update an embarassing status on renren if it is working time!!!
 // @include        http://guide.renren.com/guide
 // @include        http://www.renren.com/*

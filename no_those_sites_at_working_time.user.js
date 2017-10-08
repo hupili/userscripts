@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name           no_those_sites_at_working_time
-// @namespace      http://hupili.github.com/
+// @namespace      https://hupili.net/
 // @description    redirect blocked sites during working time
 // @include        *
 // @version        1.1
