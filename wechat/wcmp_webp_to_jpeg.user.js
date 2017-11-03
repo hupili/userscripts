@@ -5,6 +5,7 @@
 // @description  Change Wechat Media Platform article's webp image into jpeg
 // @author       Pili Hu
 // @match        https://mp.weixin.qq.com/*
+// @match        http://mp.weixin.qq.com/*
 // @grant        none
 // @require      https://code.jquery.com/jquery-3.2.1.min.js
 // ==/UserScript==
