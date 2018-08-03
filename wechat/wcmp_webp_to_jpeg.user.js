@@ -13,10 +13,8 @@
 (function() {
     'use strict';
 
-    $('p img.img_loading').map(function(){
+    $('img.img_loading').map(function(){
         var e = $(this);
         e.attr('src', e.attr('data-src'));
     });
 })();
-
-
