@@ -12,9 +12,14 @@
 
 (function() {
     'use strict';
-
-    $('img.img_loading').map(function(){
-        var e = $(this);
-        e.attr('src', e.attr('data-src'));
-    });
+    setTimeout(function(){
+        console.log('test');
+        console.log($('img'));
+        $('img.img_loading').map(function(){
+            var e = $(this);
+            console.log(e.attr('data-src'));
+            console.log(e.attr('src'));
+            e.attr('src', e.attr('data-src'));
+        });
+    }, 1000);
 })();
