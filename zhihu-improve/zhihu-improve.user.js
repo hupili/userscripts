@@ -12,26 +12,37 @@
 
 (function() {
     'use strict';
-
+    const year = new Date().getFullYear()
     function formatDate(inputDate){
-        return $.format.date(inputDate, "yyyy-MM-dd, hh:mm:ss a");
+      const str = $.format.date(inputDate, "yyyy-MM-dd HH:mm");
+      if (str.includes(year.toString())) {
+        return str.slice(5)
+      }
+      return str
     }
 
-    var question = $('.QuestionPage');
-    var dateModified = question.find('meta[itemprop="dateModified"]').attr('content');
-    var dateCreated = question.find('meta[itemprop="dateCreated"]').attr('content');
-    var h1 = question.find('h1');
-    h1.after($('<p>').text(`Modified: ${formatDate(dateModified)}`));
-    h1.after($('<p>').text(`Created: ${formatDate(dateCreated)}`));
-
-    // optimise answers
-    $('.List-item').map(function(){
+   // optimise answers
+    $('.Card.TopstoryItem').map(function(){
         var answewr = $(this);
-        console.log(answewr);
+
         var dateModified = answewr.find('meta[itemprop="dateModified"]').attr('content');
         var dateCreated = answewr.find('meta[itemprop="dateCreated"]').attr('content');
-        answewr.prepend($('<p>').text(`Modified: ${formatDate(dateModified)}`));
-        answewr.prepend($('<p>').text(`Created: ${formatDate(dateCreated)}`));
+        if (!dateModified && !dateCreated) return
+
+        const createStr = dateCreated ? ` ${formatDate(dateCreated)}` : ''
+        const modifyStr = dateModified === dateCreated ? '' : `编辑于 ${formatDate(dateModified)}`
+        answewr.append($('<p style="color: #8590a6;margin-top: 5px;margin-bottom: -10px">').text(`${createStr} ${modifyStr}`));
     })
+
+    var question = $('.QuestionPage');
+    if (!question) return
+    var dateModified = question.find('meta[itemprop="dateModified"]').attr('content');
+    var dateCreated = question.find('meta[itemprop="dateCreated"]').attr('content');
+    if (!dateModified && !dateCreated) return
+    var h1 = question.find('h1');
+    const createStr = dateCreated ? ` ${formatDate(dateCreated)}` : ''
+    const modifyStr = dateModified === dateCreated ? '' : `编辑于 ${formatDate(dateModified)}`
+
+    h1.after($('<p style="color: #8590a6;margin-top: 5px;">').text(`${createStr} ${modifyStr}`));
 
 })();
